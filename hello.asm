@@ -38,12 +38,12 @@ mov ax, 15
 shl eax, 16
 mov ax, 0
 
-;push eax
-;push dword [hStdOut]
-;call [SetConsoleCursorPosition]
+push eax
+push dword [hStdOut]
+call [SetConsoleCursorPosition]
 
-;push dword 5000
-;call [Sleep]
+push dword 5000
+call [Sleep]
 
 call [FreeConsole]
 
