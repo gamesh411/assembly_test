@@ -43,6 +43,7 @@ push dword [hStdOut]
 call [SetConsoleCursorPosition]
 
 push dword 1000
+;so much sleep wow
 call [Sleep]
 
 call [FreeConsole]
