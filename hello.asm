@@ -42,9 +42,14 @@ push eax
 push dword [hStdOut]
 call [SetConsoleCursorPosition]
 
+<<<<<<< HEAD
 
 push dword 15000
 ; fck me 
+=======
+push dword 1000
+;so much sleep wow
+>>>>>>> refs/remotes/origin/fucked-up-two
 call [Sleep]
 
 call [FreeConsole]
