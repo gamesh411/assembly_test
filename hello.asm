@@ -44,6 +44,7 @@ call [SetConsoleCursorPosition]
 
 
 push dword 15000
+; fck me 
 call [Sleep]
 
 call [FreeConsole]
