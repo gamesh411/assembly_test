@@ -42,7 +42,8 @@ push eax
 push dword [hStdOut]
 call [SetConsoleCursorPosition]
 
-push dword 1000
+
+push dword 15000
 call [Sleep]
 
 call [FreeConsole]
