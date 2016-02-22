@@ -9,15 +9,6 @@ extern SetConsoleCursorPosition
 extern Sleep
 extern ExitProcess
 
-;import GetStdHandle kernel32.dll 
-;import WriteFile kernel32.dll 
-;import AllocConsole kernel32.dll 
-;import FreeConsole kernel32.dll 
-;import SetConsoleTitleA kernel32.dll 
-;import SetConsoleCursorPosition kernel32.dll 
-;import Sleep kernel32.dll 
-;import ExitProcess kernel32.dll
-
 section .text use32
 start:
 
@@ -46,13 +37,6 @@ call [WriteFile]
 mov ax, 15
 shl eax, 16
 mov ax, 0
-
-; push dword 0
-; push dword nBytes
-; push dword 4
-; push dword "helo"
-; push dword [hStdOut]
-; call [WriteFile]
 
 ;push eax
 ;push dword [hStdOut]
